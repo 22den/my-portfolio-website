@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles/survey-form.css" />
+  </head>
+
+  <body>
+    <div class="intruduction">
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+      <p id="description">The Form To Help The World Be A Better Place</p>
+    </div>
+
+    <form id="survey-form">
+      <div class="name-label">
+        <label id="name-label" for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          required
+          placeholder="Enter Your Name"
+          class="input-field"
+        />
+      </div>
+
+      <div class="email-label">
+        <label id="email-label">Email</label>
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Enter Your Email"
+          class="input-field"
+        />
+      </div>
+
+      <div class="number-label">
+        <label id="number-label">Age</label>
+        <input
+          id="number"
+          type="number"
+          min="10"
+          max="100"
+          required
+          placeholder="Enter Your Age"
+          class="input-field"
+        />
+      </div>
+
+      <div class="question_1">
+        <label class="question"
+          >On Average How Much Time Do You Spend On FreeCodeCamp?</label
+        >
+        <select id="dropdown">
+          <option>5+ min</option>
+          <option>10+ min</option>
+          <option>20+ min</option>
+          <option>30+ min</option>
+          <option>45+ min</option>
+          <option>60+ min</option>
+          <option>90+ min</option>
+          <option>120+ min</option>
+          <option>150+ min</option>
+        </select>
+      </div>
+
+      <fieldset class="question_2">
+        <legend class="question">How Would You Rate FreeCodeCamp?</legend>
+        <label class="answer radio">
+          <span class="label-text">1/10</span>
+          <input type="radio" value="1/10" name="answer" class="input" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">2/10</span>
+          <input type="radio" class="input" value="1/10" name="answer" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">3/10</span>
+          <input type="radio" class="input" value="3/10" name="answer" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">4/10</span>
+          <input type="radio" class="input" value="4/10" name="answer" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">5/10</span>
+          <input type="radio" class="input" value="5/10" name="answer" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">6/10</span>
+          <input type="radio" class="input" value="6/10" name="answer" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">7/10</span>
+          <input type="radio" class="input" value="7/10" name="answer" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">8/10</span>
+          <input type="radio" class="input" value="8/10" name="answer" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">9/10</span>
+          <input type="radio" class="input" value="9/10" name="answer" />
+        </label>
+        <label class="answer radio">
+          <span class="label-text">10/10</span>
+          <input type="radio" class="input" value="10/10" name="answer" />
+        </label>
+      </fieldset>
+      <fieldset class="question_3">
+        <legend class="question">
+          Where Have You Seen FreeCodeCamp?(check all that apply)
+        </legend>
+        <label class="question">
+          <span class="label-text">Youtube</span>
+        </label>
+        <label class="question">
+          <span class="label-text">Ad</span>
+          <input type="checkbox" value="Ad" />
+        </label>
+        <label class="question">
+          <span class="label-text">Friends</span>
+          <input type="checkbox" value="Friends" />
+        </label>
+        <label class="question">
+          <span class="label-text">FaceBook Snapchat Ect</span>
+          <input type="checkbox" value="FaceBook Snapchat Ect" />
+        </label>
+        <label class="question">
+          <span class="label-text">other</span>
+          <input type="checkbox" value="other" />
+        </label>
+      </fieldset>
+      <textarea
+        class="comment"
+        placeholder="enter your comment here..."
+      ></textarea>
+
+      <div class="comment">
+        <button id="submit" type="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
